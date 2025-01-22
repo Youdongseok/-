@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel = "stylesheet" href = "./css/scroll.css">
+    <script src="main.js"></script>
+    <title>자기소개하기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header"> 
+            <nav class="menu">
+                <ul>
+                    <!-- id로 이동할 섹션 지정 -->
+                    <li><a href="#home"><b>Home</b></a></li>
+                    <li><a href="#about"><b>About</b></a></li>
+                    <li><a href="#experience"><b>Experience</b></a></li>
+                    <li><a href="#favorites"><b>My favorite things</b></a></li>
+                    <li><a href="#plans"><b>Plans</b></a></li>
+                </ul>
+            </nav>
+        </header> 
+
+        <!-- 각 섹션에 id 추가 -->
+        <div class="list" id="home">
+            <div class="one">
+                <span class="profile"><img src="./imgs/me2.jpg" width="550px;" height="550px" alt=""/></span> 
+                <h3><strong>프론트엔드 비대면 유동석</strong> 
+            </div>
+        </div>
+    
+        <div class="list" id="about">
+            <div class="two">
+                <img class="profile" src="./imgs/me.jpg" alt="" width="500px;" height="550px">
+                <h3 class="intext"> 
+                    <p><strong>About Me<br></strong></p>
+                    <p><strong>이름 :</strong> 유동석</p>
+                    <p><strong>나이 :</strong> 25살</p>
+                    <p><strong>생일:</strong> 2001년 3월 7일</p>
+                    <p><strong>전공 :</strong> 의료정보학</p>
+                    <p style=text-decoration:underline;><strong>키 :</strong> 185☆</p>
+                    <p><strong>MBTI :</strong> ENFP</p>
+                    <p><strong>자격증 :</strong> 정보처리 산업기사</p>
+
+                   
+                </h3>
+            </div>
+        </div>
+        
+        
+        <div class="list" id="experience">
+            <div class="three">
+                <h1>제일 좋았던 경험 : 일본 여행</h1>
+                <div id="image-container"></div>
+            </div>
+        </div>
+
+        <div class="list" id="favorites">
+            <div class="four">
+                <h1><br><br> My favorite things </h1>
+                <div class="favorites">
+                    <div class="lists">
+                        <img class="list_img profile" src="./imgs/travel.jpg" alt="">
+                        <p class="list_text"> 산책🏃🏻&여행🛩️ </p>
+                    </div>
+    
+                    <div class="lists">
+                        <img class="list_img profile" src="./imgs/coffe.jpg" alt="">
+                        <p class="list_text"> Coffee ☕</p>
+                    </div>
+    
+                    <div class="lists">
+                        <img class="list_img profile" src="./imgs/meat.jpg" alt="">
+                        <p class="list_text"> 고기🍖</p>
+                    </div>
+    
+                    <div class="lists">
+                        <img class="list_img profile" src="./imgs/flower.jpg" alt="">
+                        <p class="list_text"> 꽃🌼</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="list" id="plans">
+            <div class="five">
+                <h2> 앞으로의 계획 </h2>
+                <span class="profile"><img src="./imgs/oneshot.jpg" width="550px;" height="550px" alt=""/></span> 
+                <p><h1>🔥유레카 수료하고 취뽀하기🔥</h1></p>
+                <p>제발...</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
