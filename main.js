@@ -22,3 +22,17 @@ document.addEventListener('DOMContentLoaded', function() {
         .map(group => `<div class="favorites">${group.join('')}</div>`)
         .join('');
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.querySelector("#about");
+    const aboutCard = aboutSection.querySelector(".two");
+
+    if (aboutCard) {
+        aboutCard.addEventListener("click", function (event) {
+            // 클릭된 요소가 카드의 앞면이나 뒷면일 때만 회전
+            if (event.target.closest('.card-front') || event.target.closest('.card-back')) {
+                aboutCard.classList.toggle("flipped");
+            }
+        });
+    }
+});
