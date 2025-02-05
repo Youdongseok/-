@@ -156,16 +156,19 @@ h1 {
 }
 
 .list_img {
-    width: 300px;
-    height: 300px;
+    width: 250px; /* 크기를 줄여 작은 화면에서 보기 좋게 */
+    height: 250px;
     display: block;
-    margin: 7vh 5vh;
-    margin-bottom: 80px;
+    margin: 5vh 2vh;
+    margin-bottom: 40px;
 }
 
 .favorites {
-    display:inline-flex;
-    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;  /* 반응형을 위해 줄 바꿈 허용 */
+    justify-content: center; /* 가운데 정렬 */
+    gap: 30px; /* 간격 추가 */
+    margin-top: 40px;
 }
 
 
@@ -176,4 +179,5 @@ h1 {
     align-items: center;
     font-family: 'Pretendard-Thin';
 }
+
 
